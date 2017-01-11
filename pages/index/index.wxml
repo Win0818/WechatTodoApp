@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container1">
+  <swiper indicator-dots="true" autoplay="true">
+      <swiper-item wx:for="{{imgUrls}}">
+        <image src="{{item}}"  class="itemStyle1" > </image>
+      </swiper-item>
+  </swiper>
+</view>
+<view class="">
+    <text>平台投资总额</text>
+    <text>      累计为用户赚赚取</text>
+</view>

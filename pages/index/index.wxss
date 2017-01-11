@@ -1,0 +1,35 @@
+/**index.wxss**/
+.container1{
+  height: 200px;
+  width: 100%;
+  
+}
+.itemStyle1 {
+  height: 100%;
+  width: 100%;
+
+}
+.itemStyle2 {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+
+}
+.itemStyle3 {
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+
+}
+.itemStyle4 {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+
+}
+.itemStyle5 {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+
+}

@@ -1,0 +1,32 @@
+<view class="container1">
+    <view class="line"></view>
+    <view class="header">
+        <image src="../../image/plus.png" class="plus"
+        bindtap="createTodoItem"></image>
+        <input value="{{inputValue}}" placeholder="请输入待办事项..."
+        bindinput="changeInputValue"/>
+    </view>
+    <block wx:if="{{todos.length}}">
+        <view class="todo">
+            <view wx:for="{{todos}}" class="item" wx:key="{{index}}" 
+            bindtap="toggleTodoItem" data-index="{{index}}">
+                <icon type="{{item.completed ? 'success' : 'circle'}}"></icon>
+                <text class="itemName{{item.completed ? ' itemCompleted' : ''}}">{{item.name}}</text>
+                <icon type="clear" catchtap="removeTodoItem" 
+                data-index="{{index}}"></icon>
+            </view>
+        </view>
+        <view class="footer">
+            <text class="footerContent" bindtap="toggleAll">Toggle all</text>
+            <text class="footerContent">{{todoCount}} item left</text>
+            <text class="footerContent" bindtap="removeAll">Clear completed</text>
+        </view>
+
+    </block>
+    <block wx:else>
+        <view class="empty">
+            <text class="title">Congratulations</text>
+            <text class="content">There is no remaining items.</text>
+        </view>
+    </block>
+</view>

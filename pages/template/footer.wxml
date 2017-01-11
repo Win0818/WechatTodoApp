@@ -1,0 +1,8 @@
+<template name="footer1" >
+这里是底部1
+</template>
+
+<import src=".." />
+<template name="footer2" >
+这里是d底部2 -----{{text}}
+</template>
